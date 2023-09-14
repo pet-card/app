@@ -1,28 +1,71 @@
-# Create T3 App
+# Pet Card
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
-
-## What's next? How do I make an app with this?
-
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
-
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
-
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
-
-## Learn More
+This is a [T3 Stack](https://create.t3.gg/) project.
 
 To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
 
 - [Documentation](https://create.t3.gg/)
 - [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## Tech stack
 
-## How do I deploy this?
+- [Next.js](https://nextjs.org)
+- [NextAuth.js](https://next-auth.js.org)
+- [Drizzle](https://orm.drizzle.team)
+- [Tailwind CSS](https://tailwindcss.com)
+- [tRPC](https://trpc.io)
+- [Turso](https://turso.tech)
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+## Getting started
+
+### Prerequisites
+
+You need to have the following installed:
+
+- [Node.js](https://nodejs.org/en/download/)
+- [Yarn](https://yarnpkg.com/getting-started/install)
+- [Turso](https://docs.turso.tech/tutorials/get-started-turso-cli/step-01-installation)
+
+### Installation
+
+Run the following command to install the dependencies:
+
+```bash
+yarn install
+```
+
+It should create a `local.db` file at the root of the project, which is the SQLite database used by the app in development.
+
+The `postinstall` script will run automatically and create the database tables.
+
+TODO: Add a seed function to create a user and a pet.
+
+### Running the app
+
+Run the following command to start the app:
+
+```bash
+yarn dev
+```
+
+The app should be running at [http://localhost:3000](http://localhost:3000).
+
+You can also run the Drizzle studio to view the database at [http://0.0.0.0:4983](http://0.0.0.0:4983):
+
+```bash
+yarn db:studio
+```
+
+### Running the tests
+
+TODO: Add tests
+
+### Git
+
+This project uses [commitizen](https://github.com/commitizen/cz-cli) for commit conventions, [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog) for changelogs, and [commitlint](https://github.com/conventional-changelog/commitlint) for linting commit messages.
+
+Run the following command to commit your changes:
+
+```bash
+yarn commit
+```
