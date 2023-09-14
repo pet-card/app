@@ -1,0 +1,34 @@
+{
+  "version": "5",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1694701969995,
+      "tag": "0000_melodic_sabra",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1694702882365,
+      "tag": "0001_high_korath",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1694703145644,
+      "tag": "0002_last_zaladane",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1694703846556,
+      "tag": "0003_thin_thunderbolt",
+      "breakpoints": true
+    }
+  ]
+}
