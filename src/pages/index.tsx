@@ -15,7 +15,7 @@ export default function Home() {
       <main className="flex flex-col items-center">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           <h1 className="text-5xl font-extrabold tracking-tight  sm:text-[5rem]">
-            Create T3 App
+            Pet card
           </h1>
 
           <div className="flex flex-col items-center gap-2">
